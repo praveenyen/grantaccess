@@ -10,14 +10,11 @@
   [![Test Coverage][coveralls-image]][coveralls-url]
 
 ```js
-const express = require('express')
-const app = express()
+const express = require('express');
+const router = express.Router();
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
-
-app.listen(3000)
+const { grantAccess } = require('grantaccess')
+router.route('/user/profile').get(grantAccess(['DIRECTOR', 'student1']), userController.getUserProfile);
 ```
 
 ## Installation
@@ -35,7 +32,7 @@ Installation is done using the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```bash
-$ npm install express
+$ npm install grantaccess
 ```
 
 Follow [our installing guide](http://expressjs.com/en/starter/installing.html)
