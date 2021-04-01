@@ -1,4 +1,4 @@
-const catchAsync = require('./error/appError');
+const AppError = require('./error/appError');
 exports.grantAccess = (roles) => {
     return async (req, res, next) => {
         try {
