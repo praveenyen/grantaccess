@@ -1,6 +1,6 @@
 {
   "name": "grantaccess",
-  "version": "1.0.25",
+  "version": "1.1.0",
   "description": "Express Role based access control middleware",
   "main": "grantAccess.js",
   "scripts": {
