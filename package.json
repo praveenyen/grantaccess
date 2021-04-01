@@ -1,0 +1,18 @@
+{
+  "name": "grantaccess",
+  "version": "1.0.0",
+  "description": "Express Role based access control middleware",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express ACL",
+    "Role",
+    "Based",
+    "Role",
+    "Middleware"
+  ],
+  "author": "Praveen Yen",
+  "license": "ISC"
+}
